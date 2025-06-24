@@ -26,17 +26,17 @@ SecureVault is a **smart, local password manager** written in C++ that combines 
 
 ## 🧩 Project Structure
 SecureVault
-include
+||include
  ->PasswordManager.h
  ->Trie.h
  ->utils.h
-src
+||src
  ->main.cpp
  ->PasswordManager.cpp
  ->Trie.cpp
  ->utils.cpp
-passwords.csv # storage file
-breached_passwords.txt # Simulated leaked passwords
+||passwords.csv # storage file
+||breached_passwords.txt # Simulated leaked passwords|||
 
 📋 Menu Options
 --- SecureVault Menu ---
