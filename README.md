@@ -26,7 +26,6 @@ SecureVault is a **smart, local password manager** written in C++ that combines 
 
 ## 🧩 Project Structure
 SecureVault
-
 include
  ->PasswordManager.h
  ->Trie.h
