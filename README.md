@@ -1,4 +1,4 @@
-# 🔐 SecureVault – DSA-Based Smart Password Manager
+# SecureVault – DSA-Based Smart Password Manager
 
 SecureVault is a **smart, local password manager** written in C++ that combines **DSA concepts** with **real-world security features** like password strength analysis, breach detection using a trie, and password reuse detection. It supports persistent storage through CSV files.
 
@@ -6,15 +6,13 @@ SecureVault is a **smart, local password manager** written in C++ that combines 
 
 ## 📦 Features
 
-| Feature                               | Description                                                                 |
-|---------------------------------------------------------------------------------------------------------------------|
-| 🔒 Secure local password storage     | Store credentials for websites with strength scoring                        |
-| 📊 Password strength analyzer        | Rates passwords based on length, diversity, and complexity (score out of 6) |
-| 🧠 Breach detection (mock)           | Checks passwords against a simulated leak list using a Trie                 |
-| 🔁 Reuse detection                   | Warns if the same password has been used more than once                     |
-| 💾 Persistent CSV storage            | Saves and loads passwords using `passwords.csv`                             |
-| 🔍 Search by site name               | Retrieve passwords based on website names                                   |
-| 🧹 Cleanup weak passwords            | Deletes entries below a strength threshold                                  |
+| 🔒 Secure local password storage
+| 📊 Password strength analyzer
+| 🧠 Breach detection (mock)
+| 🔁 Reuse detection   
+| 💾 Persistent CSV storage
+| 🔍 Search by site name         
+| 🧹 Cleanup weak passwords
 
 ---
 
