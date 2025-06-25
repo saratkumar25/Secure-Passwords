@@ -47,13 +47,13 @@ SecureVault
 5. Save & Exit
 
 ##  Password Strength Scoring
-Criteria	Points
-≥ 8 characters	2
-Contains lowercase	1
-Contains uppercase	1
-Contains digits	1
-Contains symbols	1
-Max Score	6
+Criteria	               Points
+1. ≥ 8 characters	      2
+2. Contains lowercase  	1
+3. Contains uppercase  	1
+4. Contains digits	     1
+5. Contains symbols    	1
+6. Max Score           	6
 
 ##   Future Improvements
 GUI using Qt or ImGui
