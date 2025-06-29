@@ -49,7 +49,7 @@ SecureVault/
 
 ##  Password Strength Scoring
 ```bash
-Criteria	           Points
+Criteria	        Points
 1. ≥ 8 characters-------->2
 2. Contains lowercase---->1
 3. Contains uppercase---->1
