@@ -12,14 +12,13 @@ SecureVault is a **smart, local password manager** written in C++ that combines 
 <br>
 ->  Breach detection (mock)
 <br>
-->  Reuse detection   
+->  Reuse detection
 <br>
 ->  Persistent CSV storage
 <br>
-->  Search by site name         
+->  Search by site name  
 <br>
 ->  Cleanup weak passwords
-<br>
 
 ##  Tech Stack
 
