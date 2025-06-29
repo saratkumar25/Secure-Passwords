@@ -25,19 +25,20 @@ SecureVault is a **smart, local password manager** written in C++ that combines 
 ---
 
 ##  Project Structure
-SecureVault
-|| include
- ->PasswordManager.h
- ->Trie.h
- ->utils.h
-|| src
- ->main.cpp
- ->PasswordManager.cpp
- ->Trie.cpp
- ->utils.cpp
-|| passwords.csv # storage file
-|| breached_passwords.txt # Simulated leaked passwords|||
-
+```bash
+SecureVault/
+├── include/
+│ ├── PasswordManager.h
+│ ├── Trie.h
+│ └── utils.h
+├── src/
+│ ├── main.cpp
+│ ├── PasswordManager.cpp
+│ ├── Trie.cpp
+│ └── utils.cpp
+├── passwords.csv # Password data
+└── breached_passwords.txt # Simulated leaked passwords
+```
 ##   Menu Options
 --- SecureVault Menu ---
 1. Add Password
@@ -47,6 +48,7 @@ SecureVault
 5. Save & Exit
 
 ##  Password Strength Scoring
+```bash
 Criteria	               Points
 1. ≥ 8 characters-------->2
 2. Contains lowercase---->1
@@ -54,7 +56,7 @@ Criteria	               Points
 4. Contains digits------->1
 5. Contains symbols------>1
 6. Max Score------------->6
-
+```
 ##   Future Improvements
 GUI using Qt or ImGui
 AES encryption for password fields
