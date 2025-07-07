@@ -21,15 +21,15 @@ void PasswordManager::addEntry(const std::string& site, const std::string& usern
     entry.strength = calculateStrength(password);
 
     if (passwordSet.count(password)) {
-        std::cout << "⚠️  Reused password detected!\n";
+        std::cout << " Reused password detected!\n";
     }
     if (breachTrie.search(password)) {
-        std::cout << "🚨 Password found in breach database!\n";
+        std::cout << "Password found in breach database!\n";
     }
 
     passwordSet.insert(password);
     entries.push_back(entry);
-    std::cout << "✅ Password added for site: " << site << std::endl;
+    std::cout << "Password added for site: " << site << std::endl;
 }
 
 void PasswordManager::searchBySite(const std::string& site) {
@@ -40,14 +40,14 @@ void PasswordManager::searchBySite(const std::string& site) {
             std::cout << "Site: " << entry.site << ", Username: " << entry.username << ", Password: " << entry.password << ", Strength: " << entry.strength << "/6\n";
         }
     }
-    if (!found) std::cout << "❌ No entry found for site: " << site << std::endl;
+    if (!found) std::cout << "No entry found for site: " << site << std::endl;
 }
 
 void PasswordManager::cleanupWeakPasswords(int threshold) {
     std::vector<PasswordEntry> strongEntries;
     for (const auto& entry : entries) {
         if (entry.strength >= threshold) strongEntries.push_back(entry);
-        else std::cout << "🧹 Removed weak password for site: " << entry.site << std::endl;
+        else std::cout << "Removed weak password for site: " << entry.site << std::endl;
     }
     entries = strongEntries;
 }
@@ -65,7 +65,7 @@ void PasswordManager::saveToFile(const std::string& filename) {
         file << entry.site << "," << entry.username << "," << entry.password << "," << entry.strength << "\n";
     }
     file.close();
-    std::cout << "💾 Passwords saved to " << filename << std::endl;
+    std::cout << "Passwords saved to " << filename << std::endl;
 }
 
 void PasswordManager::loadFromFile(const std::string& filename) {
@@ -85,5 +85,5 @@ void PasswordManager::loadFromFile(const std::string& filename) {
         passwordSet.insert(pass);
     }
     file.close();
-    std::cout << "📂 Passwords loaded from " << filename << std::endl;
+    std::cout << "Passwords loaded from " << filename << std::endl;
 }
